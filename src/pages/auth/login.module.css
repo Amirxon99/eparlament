@@ -1,0 +1,234 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(135deg, #003b95, #005dcc);
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Chap qism */
+.leftSection {
+  flex: 1;
+  padding: 80px;
+  display: flex;
+  background-image: url("../../../public/images/GerbBlur.png");
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  width: 250px;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #dbe9ff;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.contactBox {
+  position: absolute;
+  bottom: 50px;
+  font-size: 15px;
+  color: #dbe9ff;
+}
+
+/* O‘ng qism */
+.rightSection {
+  flex: 1;
+  background: #fff;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 50px 40px;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  background: #fdfdfd;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #003b95;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #003b95;
+  margin-bottom: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #003b95;
+  font-size: 14px;
+}
+
+.form input {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border: 1px solid #dce0e6;
+  border-radius: 12px;
+  background: #f0f6ff;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.form input:focus {
+  border-color: #005dcc;
+  background: #fff;
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.loginBtn {
+  background: #003b95;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.loginBtn:hover {
+  background: #005dcc;
+  transform: translateY(-2px);
+}
+
+.langSelect {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #fff;
+  color: #003b95;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+.langSelect:hover {
+  border-color: #005dcc;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .leftSection {
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftSection {
+    padding: 40px 20px;
+    text-align: center;
+    background-position: center;
+  }
+
+  .rightSection {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 60px 20px;
+  }
+
+  .card {
+    max-width: 380px;
+    width: 100%;
+    padding: 40px 30px;
+  }
+
+  .langSelect {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+  .contactBox {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 30px 20px;
+  }
+
+  .loginBtn {
+    font-size: 14px;
+  }
+}

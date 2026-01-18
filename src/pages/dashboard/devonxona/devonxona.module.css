@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7fb;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* agar Sidebar bor bo'lsa u yerda bo'ladi, main kengayadi */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.header h1 {
+  font-size: 20px;
+  color: #0b63d6; /* och ko'k */
+  margin: 0;
+}
+
+.headerRight {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.exportBtn {
+  background: linear-gradient(90deg,#ff8a00,#ff5e7a);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  cursor: pointer;
+}
+
+.totalBadge {
+  background: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+  font-size: 13px;
+  color: #334155;
+}
+.totalBadge span {
+  background: #e6f0ff;
+  color: #0b63d6;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-left: 8px;
+  font-weight: 600;
+}

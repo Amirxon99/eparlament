@@ -1,0 +1,89 @@
+.notfoundPage {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #004080, #0070cc);
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: url("/images/parlament_bg.png") no-repeat right center / contain;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.code {
+  font-size: 120px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #e8f1ff;
+  margin: 10px 0;
+}
+
+.text {
+  font-size: 16px;
+  color: #d6e2ff;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn {
+  background: #ffffff;
+  color: #004080;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #004080;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(0, 64, 128, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Responsiv */
+@media (max-width: 600px) {
+  .code {
+    font-size: 90px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+}
